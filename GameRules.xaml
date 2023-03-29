@@ -1,0 +1,33 @@
+﻿<Window x:Class="Tarneeb.GameRules"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarneeb"
+        mc:Ignorable="d"
+        Title="GameRules" Height="564" Width="517" Background="#FF296CAB">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="103*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblGameRules" Content="Game Rules" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="24" Height="42" Width="134"/>
+        <Label HorizontalAlignment="Left" Margin="28,0,0,0" VerticalAlignment="Center" Foreground="White" Height="26" Grid.Row="1" Width="38"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,4,0,0" Grid.Row="1" TextWrapping="Wrap" Text="1. Before the game begins, players are randomly dealt 13 cards each from the shuffled deck." VerticalAlignment="Top" Width="440" Height="40"  Grid.RowSpan="2" Background="#FF296CAB" BorderBrush="#FF296CAB" Foreground="White"/>
+        <TextBox HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="2. A bid is made by each player, indicating the number of tricks they think they can win in the round. The player who bids the highest number of tricks becomes the &quot;declarer,&quot; and their partner becomes their teammate." VerticalAlignment="Center" Width="440" Height="49" Background="#FF296CAB" BorderBrush="#FF296CAB" Foreground="White" />
+        <TextBox HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Text="3. The player to the left of the declarer leads the first trick by playing any card from their hand. The other players must follow suit if possible, or they can play any other card if they do not have a card of the same suit as the leading card." VerticalAlignment="Center" Width="440" Height="49" Background="#FF296CAB" BorderBrush="#FF296CAB" Foreground="White" />
+        <TextBox HorizontalAlignment="Center" Grid.Row="4" TextWrapping="Wrap" Text="4. The player who plays the highest card of the leading suit wins the trick and leads the next trick. If a player does not have a card of the leading suit, they can play a trump card instead. The highest trump card played wins the trick." VerticalAlignment="Center" Width="440" Height="49" Background="#FF296CAB" BorderBrush="#FF296CAB" Foreground="White" />
+        <TextBox HorizontalAlignment="Center" Grid.Row="5" TextWrapping="Wrap" Text="5. The round continues until all 13 tricks have been played, and each player must follow suit or play a trump card if they do not have a card of the leading suit." VerticalAlignment="Center" Width="440" Height="35" Background="#FF296CAB" BorderBrush="#FF296CAB" Foreground="White" />
+        <TextBox HorizontalAlignment="Center" Grid.Row="6" TextWrapping="Wrap" Text="6. After the round is completed, the declarer's team earns points equal to the number of tricks they bid, plus 1. If they fail to win the number of tricks they bid, they lose the same number of points." VerticalAlignment="Center" Width="440" Height="48" Background="#FF296CAB" BorderBrush="#FF296CAB" Foreground="White" />
+        <TextBox HorizontalAlignment="Center" Grid.Row="7" TextWrapping="Wrap" Text="7. The team with the highest score at the end of the game, which is usually played over several rounds, wins." VerticalAlignment="Center" Width="440" Height="45" Background="#FF296CAB" BorderBrush="#FF296CAB" Foreground="White" />
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Center" Grid.Row="8" VerticalAlignment="Center" Height="20" Width="104" Click="btnClose_Click"/>
+
+    </Grid>
+</Window>
